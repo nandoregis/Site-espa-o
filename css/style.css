@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family:'Roboto Mono';
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.body-home {
+   background-image: url("../img/background-home-desktop.jpg");
+   overflow-y: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear {
+    clear: both;
+}
+
+/*----------------------------------*/
+
+header {
+    margin-top: 25px;
+}
+
+
+.logo {
+    float: left;
+    padding: 10px 2%;
+}
+.logo a {color: white;}
+
+nav.menu-desktop {
+    float: right;
+    background: #CE5937;
+    background: linear-gradient(to right, #0e1011 5%, #3b4f68 30%, #102749 100%);
+    padding: 0 2%;
+}
+
+nav.menu-desktop li {
+    display: inline-block;
+    margin-right: -4px;
+    margin-left: 30px;
+    padding: 25px 0;
+    border-bottom: 2px solid transparent;
+    transition: 0.9s;
+}
+
+nav.menu-desktop li:hover {
+    transition: 0.9s;
+    border-bottom: 2px solid white;
+}
+
+nav.menu-desktop li.menu-selected {
+    border-bottom: 2px solid white;
+}
+
+nav.menu-desktop b {
+    color: white;
+}
+nav.menu-desktop a {
+    color: rgb(223, 221, 221);
+    text-transform: uppercase;
+    font-size: 15px;
+    display: block;
+}
+
+nav.menu-mobile img {
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 99;
+}
+
+/* -- menu mobile --*/
+
+nav.menu-mobile{
+    float: right;
+    padding: 0 2%;
+    display: none;
+}
+
+nav.menu-mobile ul {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
+    background: linear-gradient(to bottom, #0e1011 5%, #3b4f68 30%, #102749 100%);
+}
+nav.menu-mobile li {
+    padding: 3px 0;
+    font-size: 20px;
+}
+nav.menu-mobile a {color: rgb(223, 221, 221);}
+nav.menu-mobile a:hover {
+    color: white;
+}
+nav.menu-mobile b {color: white;}
+
+nav.menu-mobile a.mobile-selected {
+    color: white;
+}
+
+/*-- SECTION CHAMADA -- */
+
+section.box-chamada-home {
+    padding-top: 200px;
+}
+
+.chamada-home {
+    color: white;
+    float: left;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.chamada-home h2 {
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.chamada-home b {
+    font-size: 120px;
+    font-weight: 400;
+}
+
+.chamada-explore {
+    float: left;
+    width: 42%;
+    text-align: right;
+    padding-top: 100px;
+}
+
+.chamada-explore a {
+    color: black;
+}
+
+.btn-explore {
+    background-color: white;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 150px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn-explore p {
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+}
+
+/* - Finalizado pagina inicial -*/
+
+/* -- pagina destino -- */
+
+.body-destino {
+    background-image: url("../img/destination/background-destination-desktop.jpg");
+    overflow-y: hidden;
+}
+
+.box-destino {
+    padding-top: 30px;
+}
+
+.satelite-single {
+    float: left;
+    width: 33.3%;
+    position: relative;
+}
+
+.satelite-single:nth-of-type(5) {
+    width: 100%;
+    padding: 30px 0;
+}
+.satelite-single p {
+    color: rgb(235, 235, 235);
+    width: 100%;
+}
+
+.satelite-single img {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 4px;
+    border: 2px solid transparent;
+    transition: 0.7s;
+}
+
+.satelite-single img:hover {
+    transition: 0.7s;
+    border: 2px solid rgba(240, 238, 238, 0.6);
+}
+
+.satelite-single:nth-of-type(2) {
+    text-align: center;
+}
+.satelite-single:nth-of-type(3) {text-align: right;}
+.satelite-single:nth-of-type(4) {
+    width: 100%;
+}
+
+.marte {width: 200px;}
+.europa {width: 120px;}
+.lua {width: 100px;}
+.titan {width: 150px;}
+
+.animate-gravity {
+    animation: gravidade 1s ease-in-out alternate infinite;
+}
+
+@keyframes gravidade {
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/* - Estilo da pagina equipe -*/
+
+.body-equipe {
+    background-image: url("../img/crew/background-crew-desktop.jpg");
+    overflow: hidden;
+}
+
+section.box-equipe {
+    width: 100%;
+    padding: 80px 20px;
+}
+
+.grupo-img__equipe {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-pessoa {width: 20%;}
+.info-pessoa {
+    width: 80%;
+    padding-left: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+.info-pessoa p {color: white;}
+.img-pessoa img {max-width: 100%;}
+
+/* - section menu-equipe -*/
+
+section.box-menu-equipe {
+    background-color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: -42px;
+    left: 0;
+    width: 100%;
+    transition: 0.8s;
+}
+
+.equipe-up {
+    transition: 0.8s;
+    bottom: 0 !important;
+}
+
+.btn-show-equipe {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+    border: 2.5px solid transparent;
+}
+
+.btn-show-equipe i {font-size: 22px;}
+.btn-show-equipe:hover {border: 2.5px solid rgb(129, 122, 122)}
+
+nav.menu-equipe ul {
+    text-align: center;
+}
+nav.menu-equipe li {
+    color: rgb(39, 39, 39);
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+nav.menu-equipe li:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.conter-info {
+    overflow: hidden;
+    position: relative;
+}
+
+.ative-reval::after {
+    background-color: #3b4f68;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: text-reval 1s cubic-bezier(0.85, 0, 0.15, 1) forwards;
+}
+
+#sobre-pessoa {
+    opacity: 0;
+}
+
+.text-fade {
+    animation: fade 1ms 0.5s forwards;
+}
+
+@keyframes text-reval {
+    from {
+        transform: translateX(-101%);
+    }
+
+    to {
+        transform: translateX(101%);
+    }
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    /* estilo do pagina inicial*/
+    .body-home {
+        background-image: url('../img/background-home-tablet.jpg');
+        overflow-y: hidden;
+    }
+
+    nav.menu-desktop {
+        display: none;
+    }
+    nav.menu-mobile {
+        display: block;
+    }
+
+    .logo {
+        float: left;
+        padding: 0 2%;
+    }
+
+    section.box-chamada-home {
+        padding-top: 20px;
+    }
+
+    .chamada-home {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .chamada-home h2 {
+        font-size: 22px;
+    }
+    .chamada-home b {
+        font-size: 100px;
+        font-weight: 400;
+    }
+
+    .chamada-explore {
+        float: none;
+        width: 100%;
+        text-align: right;
+        padding-top: 50px;
+    }
+
+    .btn-explore {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        margin-right: 50px;
+        
+    }
+
+    .btn-explore p {
+        font-size: 17px;
+    }
+    /*-------------------------------------*/
+    /* estilo da pagina destino*/
+    .body-destino {
+        background-image: url("../img/destination/background-destination-tablet.jpg");
+    }
+    
+    .box-destino {
+        padding-top: 15px;
+    }
+
+    .marte {width: 170px;}
+    .europa {width: 90px;}
+    .lua {width: 70px;}
+    .titan {width: 120px;}
+    
+    /*pagina equipe */
+    .body-equipe {
+        background-image: url("../img/crew/background-crew-tablet.jpg");
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+
+    /*estilo da pagina inicial */
+
+    .body-home {
+        background-image: url("../img/background-home-mobile.jpg");
+    }
+    
+
+     /* estilo da pagina destino*/
+     .body-destino {
+        background-image: url("../img/destination/background-destination-mobile.jpg");
+        overflow: hidden;
+    }
+
+    .marte {width: 140px;}
+    .europa {width: 90px;}
+    .lua {width: 60px;}
+    .titan {width: 100px;}
+
+    /*estilo da pagina equipe */
+    .body-equipe {
+        background-image: url("../img/crew//background-crew-mobile.jpg");
+    }
+
+    section.box-equipe {
+        padding: 60px 20px;
+    }
+
+    section.box-menu-equipe {
+        bottom: -62px;
+    }
+
+    .btn-show-equipe {
+        top: -65px;
+        width: 55px;
+        height: 55px;
+        line-height: 56px;
+    }
+
+    .info-pessoa {width: 100%;}
+    .info-pessoa p {
+        font-size: 16.5px;
+    }
+
+    .img-pessoa {
+        width: 35%;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .chamada-home h2 {
+        font-size: 20px;
+    }
+    .chamada-home b {
+        font-size: 80px;
+        font-weight: 400;
+    }
+    /*pagina destino*/
+
+    .marte {width: 105px;}
+    .europa {width: 70px;}
+    .lua {width: 50px;}
+    .titan {width: 80px;}
+
+    /* pagina equipe*/
+    section.box-equipe {
+        padding: 25px 20px;
+    }
+
+    section.box-menu-equipe {
+        bottom: -92px;
+    }
+}
