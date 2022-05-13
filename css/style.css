@@ -337,6 +337,13 @@ nav.menu-equipe li:hover {
     animation: fade 1ms 0.5s forwards;
 }
 
+/* Estilo da pagina tecnologia */
+
+.body-tecnologia {
+    background-image: url("../img/technology/background-technology-desktop.jpg");
+    overflow: hidden;
+}
+
 @keyframes text-reval {
     from {
         transform: translateX(-101%);
@@ -430,6 +437,12 @@ nav.menu-equipe li:hover {
         background-image: url("../img/crew/background-crew-tablet.jpg");
     }
 
+    /* Estilo da pagina tecnologia */
+
+    .body-tecnologia {
+        background-image: url("../img/technology/background-technology-tablet.jpg");
+    }
+
 }
 
 @media screen and (max-width: 520px) {
@@ -481,6 +494,12 @@ nav.menu-equipe li:hover {
         width: 35%;
         margin-bottom: 10px;
         margin-left: 10px;
+    }
+
+     /* Estilo da pagina tecnologia */
+
+     .body-tecnologia {
+        background-image: url("../img/technology/background-technology-mobile.jpg");
     }
 }
 

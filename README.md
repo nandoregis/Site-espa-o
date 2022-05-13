@@ -3,7 +3,7 @@
 
 <p>
     Primeiro estes layout foi tirado do site Frontend Mentor
-    e finalidade dele e agregar conteúdo para meu portfolio. E algumas funcionalidades do site foram feitas do meu jeito por assim se dizer.
+    e finalidade dele é agregar conteúdo para meu portfolio. E algumas funcionalidades do site foram feitas do meu jeito por assim se dizer.
 </p>
 
 <h3>Ferramenta Usada</h3>
